@@ -3,7 +3,7 @@ import requests
 
 
 API_URL = 'http://204.48.22.151:5555/model'
-TOKEN = 'ODMzNzgyODk1Mjk4MDg0OTI1.YH3W1Q.7mYxRRPS9ygaEL6iqcQFOsZVjaU'
+TOKEN = 'ВАШ ТОКЕ'
 client = discord.Client()
 
 def request_sentiment(message):
@@ -27,7 +27,7 @@ async def on_message(message):
     # то мы не отвечаем. Иначе бот будет разговаривать сам с собой
     if message.author == client.user:
         return
-        
+
     setiment = request_sentiment(message.content)
     if setiment == 'positive':
         await message.channel.send('Спасибо за добрые слова')     
