@@ -3,7 +3,7 @@ import requests
 
 
 API_URL = 'http://204.48.22.151:5555/model'
-TOKEN = 'ВАШ ТОКЕ'
+TOKEN = 'ВАШ ТОКЕН'
 client = discord.Client()
 
 def request_sentiment(message):
@@ -38,3 +38,4 @@ async def on_message(message):
 
 # Команда должна быть всегда в самом низу нашего скрипта
 client.run(TOKEN)
+
